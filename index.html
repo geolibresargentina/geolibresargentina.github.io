@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Simply Me</title>
+  <title>GeoLibres Argentina</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -17,6 +17,12 @@
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
+  .logo_geolibres {width:"50%"}
+
+  @media only screen and (min-device-width: 600px) {
+    .logo_geolibres {width:"100%"}
+  }
+
   .bg-1 { 
     background-color: #1abc9c; /* Green */
     color: #ffffff;
@@ -47,7 +53,20 @@
     letter-spacing: 5px;
   }
   .navbar-nav  li a:hover {
-    color: #1abc9c !important;
+    color: #f4511e !important;
+  }
+  .logo1 {
+    color: hsl(61, 91%, 54%);
+    font-size: 50px;
+  }
+  .logo2 {
+    color: #ffffff;
+    font-size: 50px;
+  }
+
+  .logo3 {
+    color: #f4511e;
+    font-size: 50px;
   }
   </style>
 </head>
@@ -62,56 +81,88 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Me</a>
+      <a class="navbar-brand" href="#">GeoLibres</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#comunidades">Comunidades</a></li>
+        <li><a href="#asociarte">Asociarte</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
+<div class="container-fluid bg-3 text-center">  
+  <img src="./images/geolibres.png" class="img-responsive" style="display:inline" alt="GeoLibres" id="logo_geolibres">
+  <h3 class="margin">Asociación Civil GeoLibres</h3>
+  <h4>Inscripción IGJ 1234</h4>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
+<div class="container-fluid bg-2 text-left" id="objetivos">
+  <h3 class="margin">Objetivos</h3>
+  <ul>
+    <li><p>Promover la creación y el uso de datos geográficos de acceso libre, la adopción de estándares geográficos, el uso de software libre y de código abierto para el desarrollo de capacidades de información geoespacial, a través de acciones que fomenten y fortalezcan a la comunidad geomática</p></li>
+    <li><p>Dar a conocer y promover el uso de OpenStreetMap en organismos públicos, empresas privadas y la comunidad en general</p></li>
+    <li><p>Fomentar la producción colaborativa y el acceso libre a la información geoespacial de licencia abierta</p></li>
+    <li><p>Promocionar el uso, desarrollo y la difusión del software libre y de código abierto en organismos públicos, empresas privadas y la comunidad en general</p></li>
+    <li><p>Fomentar la implementación de estándares abiertos y la interoperabilidad aplicadas a tecnologías de la información geoespacial</p></li>
+    <li><p>Propiciar el intercambio de conocimiento y la difusión de las buenas prácticas referidas a tecnologías de geomática libre a través de actividades de las comunidades</p></li>
+    <li><p>Promover la articulación de las comunidades vinculadas a geomática libre y datos geoespaciales abiertos, con las iniciativas internacionales en estas mismas temáticas.</p></li>
+  </ul>
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
+<div class="container-fluid bg-3 text-center" id="comunidades">    
+  <h3 class="margin">Comunidades</h3><br>
   <div class="row">
     <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h3>Geoinquiet@s Argentina</h3>
+      <img src="./images/geoinquietos_argentina.png" class="img-responsive margin" style="width:50%; margin:auto" alt="Image">
+      <p>Son encuentros locales informales entre gente que comparte inquietudes, intereses, experiencias o cualquier idea en el ámbito de la geomática, el software libre y la tecnología geoespacial.</p>
     </div>
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h3>OpenStreetMap Argentina</h3>
+      <img src="./images/osm_argentina.jpg" class="img-responsive margin" style="width:30%; margin:auto" alt="Image">
+      <p>También conocido como OSM, es un proyecto colaborativo para crear mapas editables y libres. En lugar del mapa en sí, los datos generados por el proyecto se consideran su salida principal.</p>
     </div>
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h3>GeoChicas</h3>
+      <img src="./images/geochicas.jpg" class="img-responsive margin" style="width:50%; margin:auto" alt="Image">
+      <p>Es un grupo de mujeres que realizan mapeo en OpenStreetMap y trabajan para cerrar la brecha de género en la comunidad Openstreetmap.Geochicas tiene usuarias en al menos 3 continentes. El grupo fue creado en la Conferencia SOTM LATAM 2016, en São Paulo, Brasil.</p>
     </div>
   </div>
 </div>
 
+<div class="container-fluid bg-2 text-center" id="asociarte">    
+  <h3 class="margin">Asociarte</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Soci@s activ@s</h2>
+      <span class="glyphicon glyphicon-user logo1"></span>
+      <p>Formar parte de la Comisión Directiva luego de 2 años de ser socios</p>
+      <p>Tener voz y voto en las asambleas y elecciones para elegir autoridades</p>
+    </div>
+    <div class="col-sm-4"> 
+      <h2>Soci@s adherentes</h2>
+      <span class="glyphicon glyphicon-heart logo2"></span>
+      <p>Descuento de 25% en algunas actividades organizadas por la asociación como ser charlas, cursos, etc.
+        Inscripción anticipada a las actividades de Asociación</p>
+    </div>
+    <div class="col-sm-4"> 
+      <h2>Auspiciantes</h2>
+      <span class="glyphicon glyphicon-fire logo3"></span>
+      <p>Organizaciones como empresas, universidades organismos públicos, ONGs, entre otras, pueden ser auspiciantes</p>
+    </div>
+  </div>
+</div>
+
+
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+  <p>GeoLibres Asociación Civil. Argentina</p> 
 </footer>
 
 </body>
